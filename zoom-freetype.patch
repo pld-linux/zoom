@@ -1,0 +1,22 @@
+--- zoom-1.0.2beta1.orig/configure	2004-10-02 18:42:49.000000000 +0200
++++ zoom-1.0.2beta1/configure	2004-11-14 05:23:26.602771448 +0100
+@@ -9359,7 +9359,7 @@
+ echo "${ECHO_T}$ac_cv_lib_Xft_XftInit" >&6
+ if test $ac_cv_lib_Xft_XftInit = yes; then
+ 
+-        LIBS="$LIBS -lXft"
++        LIBS="$LIBS -lXft -I/usr/include/freetype2"
+ 	HAVE_XFT=1
+ 
+ fi
+--- zoom-1.0.2beta1.orig/src/Makefile.in	2004-11-14 05:24:57.156005264 +0100
++++ zoom-1.0.2beta1/src/Makefile.in	2004-10-02 19:00:13.000000000 +0200
+@@ -246,7 +246,7 @@
+ zoom_LDFLAGS =
+ 
+ DEFS = @DEFS@
+-DEFAULT_INCLUDES =  -I. -I$(srcdir) -I$(top_builddir)
++DEFAULT_INCLUDES =  -I. -I$(srcdir) -I$(top_builddir) -I/usr/include/freetype2
+ CPPFLAGS = @CPPFLAGS@
+ LDFLAGS = @LDFLAGS@
+ depcomp = $(SHELL) $(top_srcdir)/depcomp
