@@ -1,0 +1,13 @@
+--- zoom-1.0.2beta1.orig/src/rc.c	2004-11-14 05:48:13.852675096 +0100
++++ zoom-1.0.2beta1/src/rc.c	2004-11-14 05:54:50.294406792 +0100
+@@ -41,8 +41,8 @@
+ rc_game*        rc_defgame = NULL;
+ 
+ #ifdef DATADIR
+-# define ZOOMRC DATADIR "/zoomrc"
+-# define GAMEDIR DATADIR "/games"
++# define ZOOMRC "/etc/zoomrc"
++# define GAMEDIR "/usr/share/games/zcode"
+ #else
+ # define ZOOMRC "zoomrc"
+ # define GAMEDIR NULL
