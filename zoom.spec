@@ -1,29 +1,31 @@
 %define		_beta beta1
-Summary:	X Window interpreter for old Infocom text games
-Summary(pl):	X Window Interpreter dla starych tekstówek Infocomu
+Summary:	X Window System interpreter for old Infocom text games
+Summary(pl):	Dzia³aj±cy pod X Window System interpreter dla starych tekstówek Infocomu
 Name:		zoom
 Version:	1.0.2
 Release:	0.%{_beta}.1
 License:	GPL
 Group:		Applications/Games
-Source0:	http://www.logicalshift.co.uk/unix/%{name}/%{name}-%{version}%{_beta}.tar.gz
+Source0:	http://www.logicalshift.co.uk/unix/zoom/%{name}-%{version}%{_beta}.tar.gz
 # Source0-md5:	bb5e302194634715c9d1c8c4951f1257
 Patch0:		%{name}-freetype.patch
 Patch1:		%{name}-paths.patch
 URL:		http://www.logicalshift.demon.co.uk/unix/zoom/
-BuildRequires:	freetype-devel
+BuildRequires:	XFree86-devel
+BuildRequires:	automake
 BuildRequires:	libpng-devel
 BuildRequires:	t1lib-devel
+BuildRequires:	xft-devel >= 2.0
 Provides:	zcode-interpreter
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-X Window interpreter for old Infocom text games, so called Interactive
-Fiction Adventure.
+X Window System interpreter for old Infocom text games, so called
+Interactive Fiction Adventure.
 
 %description -l pl
-X Window interpreter dla starych tekstówek Infocomu, zwanych tak¿e
-Interactive Fiction Adventure.
+Dzia³aj±cy pod X Window System interpreter dla starych tekstówek
+Infocomu, zwanych tak¿e Interactive Fiction Adventure.
 
 %prep
 %setup -q -n %{name}-%{version}%{_beta}
