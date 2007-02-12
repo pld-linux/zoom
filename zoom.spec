@@ -1,6 +1,6 @@
 %define		_beta beta1
 Summary:	X Window System interpreter for old Infocom text games
-Summary(pl):	Dzia≥aj±cy pod X Window System interpreter dla starych tekstÛwek Infocomu
+Summary(pl.UTF-8):   Dzia≈ÇajƒÖcy pod X Window System interpreter dla starych tekst√≥wek Infocomu
 Name:		zoom
 Version:	1.0.2
 Release:	0.%{_beta}.1
@@ -23,9 +23,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 X Window System interpreter for old Infocom text games, so called
 Interactive Fiction Adventure.
 
-%description -l pl
-Dzia≥aj±cy pod X Window System interpreter dla starych tekstÛwek
-Infocomu, zwanych takøe Interactive Fiction Adventure.
+%description -l pl.UTF-8
+Dzia≈ÇajƒÖcy pod X Window System interpreter dla starych tekst√≥wek
+Infocomu, zwanych tak≈ºe Interactive Fiction Adventure.
 
 %prep
 %setup -q -n %{name}-%{version}%{_beta}
