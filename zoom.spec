@@ -1,6 +1,6 @@
 %define		_beta beta1
 Summary:	X Window System interpreter for old Infocom text games
-Summary(pl.UTF-8):   Działający pod X Window System interpreter dla starych tekstówek Infocomu
+Summary(pl.UTF-8):	Działający pod X Window System interpreter dla starych tekstówek Infocomu
 Name:		zoom
 Version:	1.0.2
 Release:	0.%{_beta}.1
